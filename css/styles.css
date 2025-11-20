@@ -29,11 +29,20 @@ body {
 }
 
 body {
+  width: 100%;
+  margin: 0;
   font-family: "cnn_sans_display", Arial, sans-serif;
   color: var(--theme-copy);
   line-height: 1.45;
   margin: 0;
   background: var(--theme-background);
+}
+
+.container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
 hr {
@@ -136,4 +145,34 @@ li a.listen::before {
   font-size: 14px;
   line-height: 20px;
   border-radius: 8px;
+}
+
+.desktop-header-btns,
+.desktop-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  height: 100%;
+}
+
+/* ==================== Media Queries - Responsive codes ==================== */
+/* mobile + tablet */
+@media (max-width: 1023px) {
+  .desktop-header-btns,
+  .desktop-menu {
+    display: none;
+  }
+
+  .header-container,
+  hr {
+    margin: 0;
+  }
+}
+
+/* for monile */
+@media (max-width: 599px) {
+}
+
+/* for tablet */
+@media (min-width: 600px) and (max-width: 1023px) {
 }
