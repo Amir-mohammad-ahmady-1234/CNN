@@ -2,6 +2,7 @@
 :root {
   --theme-primary: #c00;
   --theme-background: #fff;
+  --theme-primary-color: #0c0c0c;
   --theme-divider: #404040;
   --theme-copy: #404040;
   --theme-copy-accent: #e6e6e6;
@@ -34,7 +35,6 @@ body {
   font-family: "cnn_sans_display", Arial, sans-serif;
   color: var(--theme-copy);
   line-height: 1.45;
-  margin: 0;
   background: var(--theme-background);
 }
 
@@ -67,7 +67,7 @@ button {
 header {
   display: flex;
   align-items: center;
-  color: #0c0c0c;
+  color: var(--theme-primary-color);
   font-size: 15px;
   font-weight: 500;
 }
@@ -158,16 +158,16 @@ li a.listen::before {
 /* ==================== news-headLine ==================== */
 .news-headline {
   width: 100%;
+  overflow-x: auto;
   display: flex;
   gap: 1rem;
   align-items: center;
   justify-content: center;
-  color: #0c0c0c;
+  color: var(--theme-primary-color);
   font-size: 15px;
   white-space: nowrap;
   font-weight: 300;
   margin-top: 2.3rem;
-  overflow: hidden;
 }
 
 .news-headline li a:hover {
@@ -182,6 +182,63 @@ li a.listen::before {
   opacity: 0.7;
 }
 
+/* News Section */
+.news-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.news-grid div {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.news-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.news-grid span {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--theme-primary-color);
+}
+
+.news-grid h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.main-news h1 {
+  color: var(--theme-primary-color);
+  text-align: center;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  font-size: 2rem;
+}
+
+.left-side-news span,
+.right-side-news span,
+.main-news span {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.news-grid hr {
+  height: 1px;
+  opacity: 0.3;
+}
+
+.news-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 /* ==================== Media Queries - Responsive codes ==================== */
 /* mobile + tablet */
 @media (max-width: 1023px) {
@@ -202,4 +259,13 @@ li a.listen::before {
 
 /* for tablet */
 @media (min-width: 600px) and (max-width: 1023px) {
+}
+
+@media (max-width: 768px) {
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+  .main-news h1 {
+    text-align: left;
+  }
 }
