@@ -269,3 +269,29 @@ li a.listen::before {
     text-align: left;
   }
 }
+
+@media (max-width: 1224px) {
+  #hide-step-1 {
+    display: none;
+  }
+}
+@media (max-width: 1174px) {
+  #hide-step-2 {
+    display: none;
+  }
+}
+@media (max-width: 1124px) {
+  #hide-step-3 {
+    display: none;
+  }
+}
+@media (max-width: 1074px) {
+  #hide-step-4 {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  #hide-step-5 {
+    display: none;
+  }
+}
