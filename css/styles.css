@@ -222,6 +222,14 @@ li a.listen::before {
   font-size: 2rem;
 }
 
+.left-side-news {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 14px;
+}
+
 .left-side-news span,
 .right-side-news span,
 .main-news span {
@@ -239,6 +247,7 @@ li a.listen::before {
   flex-direction: column;
   gap: 8px;
 }
+
 /* ==================== Media Queries - Responsive codes ==================== */
 /* mobile + tablet */
 @media (max-width: 1023px) {
