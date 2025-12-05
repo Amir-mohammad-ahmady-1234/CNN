@@ -318,7 +318,8 @@ li a.listen::before {
 
 .left-side-cat-news h3,
 .right-side-cat-news h3,
-.center-side-cat-news h3 {
+.center-side-cat-news h3,
+.travel-category-news h3 {
   color: var(--theme-primary-color);
   border-left: 6px solid var(--theme-primary-color);
   padding-left: 10px;
@@ -368,12 +369,41 @@ li a.listen::before {
   line-height: 22px;
 }
 
+/* ==================== travel categorized news ==================== */
+.travel-category-news {
+  display: flex;
+  margin-top: 7rem;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+.left-side-travel-news {
+  flex: 2.4;
+}
+.right-side-travel-news {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1;
+}
+
+.new-one h4,
+.new-two h4 {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 500;
+  color: var(--theme-primary-color);
+}
+
 /* ==================== Media Queries - Responsive codes ==================== */
 /* mobile + tablet */
 @media (max-width: 1023px) {
   .desktop-header-btns,
   .desktop-menu {
     display: none;
+  }
+
+  .travel-category-news {
+    flex-direction: column;
   }
 
   .header-container,
@@ -391,7 +421,8 @@ li a.listen::before {
 }
 
 @media (max-width: 768px) {
-  .news-grid,.categorized-news {
+  .news-grid,
+  .categorized-news {
     grid-template-columns: 1fr;
   }
   .main-news h1 {
