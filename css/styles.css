@@ -49,7 +49,6 @@ hr {
   border: none;
   height: 2px;
   background-color: var(--theme-divider);
-  margin: 0 2rem;
 }
 
 a {
@@ -80,6 +79,10 @@ header {
   color: var(--theme-primary-color);
   font-size: 15px;
   font-weight: 500;
+}
+
+#header-hr {
+  margin: 0 2rem;
 }
 
 .header-container {
@@ -394,6 +397,31 @@ li a.listen::before {
   line-height: 26px;
   font-weight: 500;
   color: var(--theme-primary-color);
+}
+
+.hotel-image-container {
+  position: relative;
+}
+
+.image-caption {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+.image-caption h2 {
+  color: var(--theme-background);
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.image-caption hr {
+  width: 40px;
+  height: 7px;
+  color: var(--theme-background);
+  background-color: var(--theme-background);
 }
 
 /* ==================== another categorize (1) ==================== */
