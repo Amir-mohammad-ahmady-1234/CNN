@@ -555,6 +555,7 @@ footer {
 
 .short-news {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   margin-top: 10px;
 }
