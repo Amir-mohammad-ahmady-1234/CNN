@@ -473,6 +473,78 @@ li a.listen::before {
   animation: pulse 1.8s ease-in-out infinite;
 }
 
+/* ==================== footer ==================== */
+footer {
+  background-color: var(--theme-primary-color);
+  color: var(--theme-background);
+  padding: 40px;
+}
+
+.footer-news {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer-news img {
+  max-width: 900px;
+  flex: 1;
+}
+
+.footer-news > div {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-news > div > hr {
+  background-color: #6e6e6e;
+}
+
+#line-between-footer-content {
+  margin: 60px 0 40px 0;
+}
+
+.serach-input {
+  width: 100%;
+  padding: 14px 12px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--theme-primary-color);
+  border: none;
+  outline: none;
+}
+
+.news-category-wrapper {
+  margin-top: 30px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 35px 100px;
+}
+
+.news-category {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.news-category p {
+  font-size: 14px;
+}
+
+.news-category p:hover,
+.news-category h4:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* ==================== Animations ==================== */
 @keyframes pulse {
   0% {
     opacity: 0.4;
@@ -557,5 +629,8 @@ li a.listen::before {
   }
   .other-news-1 > div > img {
     width: 100%;
+  }
+  .footer-news {
+    flex-direction: column;
   }
 }
